@@ -2,10 +2,11 @@ import { FC } from "react";
 import { useTranslation } from "react-i18next";
 
 import { GitHubIcon, SingInIcon, SignOutIcon } from "../../components/common-icons";
+import { useModal } from "../../core/modals";
 import { useConnectedUser } from "../../core/user";
 import { useNotifications } from "../../core/notifications";
 import { SignInModal } from "../../components/user/SignInModal";
-import { useModal } from "../../core/modals";
+import { LocalSwitcher } from "../../components/LocalSwitcher";
 
 export const GitHubPanel: FC = () => {
   const { openModal } = useModal();
@@ -20,6 +21,8 @@ export const GitHubPanel: FC = () => {
       </h2>
 
       <br />
+
+      <LocalSwitcher />
 
       {!user && (
         <>

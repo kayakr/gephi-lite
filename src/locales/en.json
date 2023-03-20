@@ -164,7 +164,9 @@
       "nodes": "nodes",
       "edges_one": "edge",
       "edges_zero": "edge",
-      "edges": "edges"
+      "edges": "edges",
+      "nodes_plural": "nodes",
+      "edges_plural": "edges"
     },
     "open": {
       "title": "Open a graph file",
@@ -333,7 +335,9 @@
           "simmelianStrength": "Simmelian strength attribute name"
         }
       }
-    }
+    },
+    "success_plural": "",
+    "compute_plural": ""
   },
   "layouts": {
     "title": "Layout",

@@ -4,6 +4,7 @@ import { Preferences } from "./types";
 export function getEmptyPreferences(): Preferences {
   return {
     recentRemoteFiles: [],
+    locale: "en",
   };
 }
 
@@ -23,6 +24,7 @@ export function getCurrentPreferences(): Preferences {
 export function serializePreferences(preferences: Preferences): string {
   return stringify(preferences);
 }
+
 export function parsePreferences(rawPreferences: string): Preferences | null {
   try {
     // TODO:
